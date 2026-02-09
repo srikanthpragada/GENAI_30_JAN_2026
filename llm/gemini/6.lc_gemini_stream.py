@@ -3,7 +3,7 @@
 from langchain.chat_models import init_chat_model
 
 model = init_chat_model("gemini-2.5-flash", model_provider="google_genai")
-response = model.stream("Which are 5 best cities in Spain")
+response = model.stream("Which are 5 best cities in Australia. Just give names and brief description.")
 
 for chunk in response:
     print(chunk.content, end = "\n-------------\n", flush = True)
