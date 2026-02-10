@@ -11,7 +11,7 @@ result = asr(audio_path, return_timestamps=True,
              generate_kwargs={"language": "en"})
 
 # Print the transcription
-print("Transcript :", result["text"] )
+#print("Transcript :", result["text"] )
 
 context = result["text"]
 
