@@ -3,7 +3,7 @@ import keys
 
 # 1. Access Embedding Model
 embeddings_model = HuggingFaceEndpointEmbeddings(
-    model="sentence-transformers/all-MiniLM-L6-v2",
+    model="BAAI/bge-m3",
     #huggingfacehub_api_token= keys.HUGGINGFACEKEY
 )
 
@@ -24,7 +24,7 @@ documents = [
 vectorstore = FAISS.from_documents(documents, embeddings_model)
 
 # 4. Perform a similarity search
-query = "Football"
+query = "Soccer"
 results = vectorstore.similarity_search(query, k=2)  # Get the top 2 results
 
 # 5. Print the results
