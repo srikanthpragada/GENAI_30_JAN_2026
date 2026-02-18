@@ -47,7 +47,6 @@ prompt  = PromptTemplate.from_template(prompt_template)
 
 retriever = db.as_retriever()
 
-
 st.title("Courses RAG Demo")
 query = st.text_input("Enter your query :",  autocomplete = 'false')
    
