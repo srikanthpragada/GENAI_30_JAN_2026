@@ -51,4 +51,4 @@ for message in messages:
     message.pretty_print()
 
 # Print final result
-print(messages[-1][0]['text'])
+#print(messages[-1][0]['text'])
