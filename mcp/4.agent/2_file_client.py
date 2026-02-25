@@ -2,7 +2,7 @@ from fastmcp import Client
 import asyncio
 
 # Connect to the Add Server using STDIO transport
-client = Client('file_server.py')
+client = Client("http://localhost:8888/mcp")
 
 async def call_tool():
     async with client:
